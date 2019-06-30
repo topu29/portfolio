@@ -1,7 +1,7 @@
 function initialize() {
 	var myOptions = {
 		zoom: 15,
-		center: new google.maps.LatLng(51.488966, -0.096777), //change the coordinates
+		center: new google.maps.LatLng(23.7821, 90.4161), //change the coordinates
 		mapTypeId: google.maps.MapTypeId.ROADMAP,
 		scrollwheel: false,
 		mapTypeControl: false,
@@ -12,10 +12,17 @@ function initialize() {
 	var map = new google.maps.Map(document.getElementById("map-canvas"), myOptions);
 	var marker = new google.maps.Marker({
 		map: map,
-		position: new google.maps.LatLng(51.488966, -0.096777) //change the coordinates
+		position: new google.maps.LatLng(23.7821, 90.4161) //change the coordinates
 	});
 	google.maps.event.addListener(marker, "click", function() {
 		infowindow.open(map, marker);
 	});
 }
 google.maps.event.addDomListener(window, 'load', initialize);
+
+// function initMap() {
+//     var map = new google.maps.Map(document.getElementById('map'), {
+//         center: {lat: -34.397, lng: 150.644},
+//         zoom: 8
+//         });
+//       }

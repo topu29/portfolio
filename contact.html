@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>HALO - Photography Portfolio Template</title>
+	<title>Portfolio</title>
 	<meta charset="UTF-8">
 	<meta name="description" content="HALO photography portfolio template">
 	<meta name="keywords" content="photography, portfolio, onepage, creative, html">
@@ -47,10 +47,10 @@
 			<ul>
 				<li><a href="index.html">Home</a></li>
 				<li><a href="about.html">about us</a></li>
-				<li><a href="#">Services</a></li>
+				<!-- <li><a href="#">Services</a></li> -->
 				<li><a href="portfolio.html">Portfolio</a></li>
 				<li><a href="blog.html">Blog</a></li>
-				<li><a href="contact.html">Contact</a></li>
+				<!-- <li><a href="contact.html">Contact</a></li> -->
 			</ul>
 		</nav>
 	</header>
@@ -66,7 +66,7 @@
 	</div>
 	<!-- Page top section end -->
 
-	<div class="map-area" id="map-canvas"></div>
+	<div class="map-area map_child col-xl-8 col-md-8 offset-xl-4" id="map"></div>
 
 
 		<!-- Contact section start -->
@@ -115,15 +115,15 @@
 	<footer class="footer-section spad">
 		<div class="container text-center">
 			<h2>Let’s work together!</h2>
-			<p>office@template.com</p>
+			<p>topubadhon@gmail.com</p>
 			<div class="social">
 				<a href="#"><i class="fa fa-pinterest"></i></a>
-				<a href="#"><i class="fa fa-facebook"></i></a>
+				<a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
 				<a href="#"><i class="fa fa-twitter"></i></a>
 				<a href="#"><i class="fa fa-dribbble"></i></a></br>
 
 
-<</br><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+</br><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved by Badhon Ahmed Topu <i aria-hidden="true"></i>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 
@@ -131,7 +131,12 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 		</div>
 	</footer>
 	<!-- Footer section end -->	
-
+<style>
+.map_child {
+  height: 55%;
+  background-color: rgb(12, 15, 58);
+}
+</style>
 
 	<!--====== Javascripts & Jquery ======-->
 	<script src="js/jquery-3.2.1.min.js"></script>
@@ -140,10 +145,15 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	<script src="js/mixitup.min.js"></script>
 	<script src="js/circle-progress.min.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/mapdata.js"></script>
+    <script src="js/countrymap.js"></script>
 
 	<!-- load for map -->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0YyDTa0qqOjIerob2VTIwo_XVMhrruxo"></script>
-	<script src="js/map.js"></script>
+	<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgvJShLYOIYocyf3-QCk3kEQgtg6nyLIc"></script>
+	<script src="js/map.js"></script> -->
+	<!-- <script async defer
+     src="https://maps.googleapis.com/maps/api/js?client=AIzaSyAgvJShLYOIYocyf3-QCk3kEQgtg6nyLIc&v=quarterly&callback=initMap"></script>
+	<script src="js/map.js"></script> -->
 
 </body>
 </html>
